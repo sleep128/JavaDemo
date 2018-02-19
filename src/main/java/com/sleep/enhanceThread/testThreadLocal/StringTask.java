@@ -1,7 +1,7 @@
 package com.sleep.enhanceThread.testThreadLocal;
 
 /**
- * @author wb-zy215796
+ * @author
  */
 public class StringTask implements Runnable {
     private String name;

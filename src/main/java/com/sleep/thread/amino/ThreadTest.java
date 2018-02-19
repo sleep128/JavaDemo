@@ -10,8 +10,8 @@ import java.util.concurrent.Executors;
 public class ThreadTest {
     public static void main(String[] args) {
 //        testSimpleThread();
-//        testAtomicThread();
-        testThreadPool();
+        testAtomicThread();
+//        testThreadPool();
     }
 
     private static void testSimpleThread(){

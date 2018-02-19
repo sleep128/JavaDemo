@@ -8,4 +8,11 @@ public class TestThreadLocal {
         new Thread(new StringTask("task1")).start();
         new Thread(new StringTask("task2")).start();
     }
+
+
+
+    public void method1(){
+        System.out.println("method1:"+MyThreadLocal.threadLocal.get());
+        MyThreadLocal.threadLocal.set("method");
+    }
 }
