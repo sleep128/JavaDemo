@@ -3,7 +3,7 @@ package com.sleep.designPatterns.singleton;
 /**
  * 双重校验单例-lazy
  * 第一个判空，如果不为空直接返回，不用再获取锁，减少性能开销
- * 第二个判空
+ * 第二个判空，防止线程并发操作
  * @author
  */
 public class SingletonLazyDoubleCheck {
