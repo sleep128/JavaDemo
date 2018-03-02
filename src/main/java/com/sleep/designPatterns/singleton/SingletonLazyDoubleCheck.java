@@ -5,7 +5,7 @@ package com.sleep.designPatterns.singleton;
  * @author
  */
 public class SingletonLazyDoubleCheck {
-    private static SingletonLazyDoubleCheck instance;
+    private volatile static SingletonLazyDoubleCheck instance;
     private SingletonLazyDoubleCheck(){}
     public static SingletonLazyDoubleCheck getInstance(){
         if(instance == null){
