@@ -1,7 +1,7 @@
 package com.sleep.enhanceThread.testThreadLocal;
 
 /**
- * @author wb-zy215796
+ * @author zy
  */
 public class TestThreadLocal {
     public static void main(String[] args) {

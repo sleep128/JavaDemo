@@ -1,7 +1,7 @@
 package com.sleep.designPatterns.adapter;
 
 /**
- * @author wb-zy215796
+ * @author zy
  */
 public class TurkeyAdapter implements Duck {
     Turkey turkey;
