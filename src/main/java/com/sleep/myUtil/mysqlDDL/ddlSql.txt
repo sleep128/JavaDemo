@@ -1,0 +1,12 @@
+--新建表
+create table zy_table (
+  ID bigint not null primary key auto_increment comment 'ID',
+  IS_DELETED char(1) comment '是否删除',
+  GMT_CREATE datetime comment '创建时间',
+  CREATOR varchar(64) comment '创建人',
+  GMT_MODIFIED datetime comment '修改时间',
+  MODIFIER varchar(64) comment '修改人', 
+  name varchar2 NOT NULL comment '名字',
+  year bigint  comment '年龄'
+) comment='新建表';
+
