@@ -2,7 +2,7 @@ package com.sleep.designPatterns.adapter;
 
 /**
  * 被适配接口
- * @author wb-zy215796
+ * @author zy
  */
 public interface Duck {
     /**

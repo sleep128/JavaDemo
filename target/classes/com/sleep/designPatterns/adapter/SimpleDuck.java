@@ -2,7 +2,7 @@ package com.sleep.designPatterns.adapter;
 
 /**
  * 被适配对象实现
- * @author wb-zy215796
+ * @author zy
  */
 public class SimpleDuck implements Duck{
 

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * @author wb-zy215796
+ * @author zy
  */
 public class TestStudent {
 
