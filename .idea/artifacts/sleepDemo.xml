@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="sleepDemo">
-    <output-path>$PROJECT_DIR$/out/artifacts/sleepDemo</output-path>
-    <root id="archive" name="sleepDemo.war" />
-  </artifact>
-</component>
