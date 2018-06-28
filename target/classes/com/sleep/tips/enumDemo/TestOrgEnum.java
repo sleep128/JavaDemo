@@ -6,6 +6,10 @@ public class TestOrgEnum {
         ErrorCode businessError02 = ErrorCode.BusinessError.BUSINESS_ERROR_02;
         ErrorCode commonError01 = ErrorCode.CommonError.COMMON_ERROR_01;
         ErrorCode commonError02 = ErrorCode.CommonError.COMMON_ERROR_02;
+        for (ErrorCode.BusinessError businessError : ErrorCode.BusinessError.values()) {
+            System.out.println(businessError.name());
+            System.out.println(businessError.getCode());
+        }
 
     }
 }

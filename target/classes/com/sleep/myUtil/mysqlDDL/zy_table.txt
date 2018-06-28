@@ -1,2 +1,0 @@
-name varchar2 N 名字
-year bigint Y 年龄

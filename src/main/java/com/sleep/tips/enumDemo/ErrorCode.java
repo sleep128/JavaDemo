@@ -5,8 +5,15 @@ package com.sleep.tips.enumDemo;
  */
 public interface ErrorCode {
     enum BusinessError implements ErrorCode{
-        BUSINESS_ERROR_01,
-        BUSINESS_ERROR_02;
+        BUSINESS_ERROR_01(1001),
+        BUSINESS_ERROR_02(1002);
+
+        private final int code;
+
+        BusinessError(int i) {
+            code = i;
+        }
+        public int getCode(){ return code; }
     }
 
     enum CommonError implements ErrorCode{

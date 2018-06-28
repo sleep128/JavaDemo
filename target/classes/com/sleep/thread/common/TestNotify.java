@@ -36,8 +36,8 @@ public class TestNotify {
         public void run() {
             synchronized (lockObject) {
                 System.out.println(System.currentTimeMillis() + "t2 start");
-                lockObject.notify();
                 System.out.println(System.currentTimeMillis() + "t2 finish");
+                //lockObject.notify();
                 try {
                     System.out.println("sleep1");
                     Thread.sleep(1000);

@@ -1,12 +1,29 @@
---新建表
-create table zy_table (
+--绝地求生玩家表
+create table gp_pubg_player (
   ID bigint not null primary key auto_increment comment 'ID',
   IS_DELETED char(1) comment '是否删除',
   GMT_CREATE datetime comment '创建时间',
   CREATOR varchar(64) comment '创建人',
   GMT_MODIFIED datetime comment '修改时间',
   MODIFIER varchar(64) comment '修改人', 
-  name varchar2 NOT NULL comment '名字',
-  year bigint  comment '年龄'
-) comment='新建表';
+  player_id bigint  comment '玩家id',
+  player_type varchar(16)  comment '玩家类型',
+  created_time datetime  comment '创建时间',
+  match_data varchar(16)  comment '比赛数据'
+) comment='绝地求生玩家表';
+
+--绝地求生比赛表
+create table gp_pubg_match_data (
+  ID bigint not null primary key auto_increment comment 'ID',
+  IS_DELETED char(1) comment '是否删除',
+  GMT_CREATE datetime comment '创建时间',
+  CREATOR varchar(64) comment '创建人',
+  GMT_MODIFIED datetime comment '修改时间',
+  MODIFIER varchar(64) comment '修改人', 
+  match_id bigint  comment '比赛编号',
+  match_data varchar(2048)  comment '比赛数据',
+  participants varchar(2048)  comment '比赛人员',
+  start_time datetime  comment '开始时间',
+  end_time datetime  comment '结束时间'
+) comment='绝地求生比赛表';
 

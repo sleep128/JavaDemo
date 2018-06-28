@@ -71,7 +71,8 @@ public class CreateTableMysql {
     private static Map<String, String> getTableMap() {
         // 格式<表名，描述>
         Map<String, String> tableMap = new LinkedHashMap<String, String>();
-        tableMap.put("zy_table", "新建表");
+        tableMap.put("gp_pubg_player", "绝地求生玩家表");
+        tableMap.put("gp_pubg_match_data", "绝地求生比赛表");
         return tableMap;
     }
 

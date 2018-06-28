@@ -1,0 +1,7 @@
+match_id bigint Y 比赛编号
+match_data varchar(2048) Y 比赛数据
+participants varchar(2048) y 比赛人员
+start_time datetime y 开始时间
+end_time datetime y 结束时间
+
+

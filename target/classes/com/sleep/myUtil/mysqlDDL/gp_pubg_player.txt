@@ -1,0 +1,5 @@
+player_id bigint y 玩家id
+player_type varchar(16) y 玩家类型
+created_time datetime y 创建时间
+match_data varchar(16) y 比赛数据
+
