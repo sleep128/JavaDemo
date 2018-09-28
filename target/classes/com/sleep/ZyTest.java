@@ -1,6 +1,12 @@
 package com.sleep;
 
-import java.util.HashMap;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Multimap;
+import com.google.common.primitives.Ints;
+import com.google.errorprone.annotations.Var;
+
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -8,9 +14,10 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ZyTest {
     public static void main(String[] args) {
-        Long l1 = 0L;
-        synchronized (ZyTest.class){
-            l1++;
-        }
+        int x = 78;
+        int i = Integer.parseInt("78", 2);
+        System.out.println(i);
+        HashSet<Object> objects = new HashSet<>();
     }
+
 }

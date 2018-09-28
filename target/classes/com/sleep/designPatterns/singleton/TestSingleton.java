@@ -18,7 +18,7 @@ public class TestSingleton {
 //        System.out.println(instance01);
 //        SingletonHunger instance02 = SingletonHunger.getInstance();
 //        System.out.println(instance02);
-
+        StringBuilder stringBuilder = new StringBuilder();
 
     }
 }

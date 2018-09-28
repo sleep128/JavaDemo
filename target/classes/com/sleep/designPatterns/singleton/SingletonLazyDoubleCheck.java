@@ -10,8 +10,11 @@ package com.sleep.designPatterns.singleton;
  * @author
  */
 public class SingletonLazyDoubleCheck {
+
     private  static volatile SingletonLazyDoubleCheck instance;
+
     private SingletonLazyDoubleCheck(){}
+
     public static SingletonLazyDoubleCheck getInstance(){
         if(instance == null){                               //1
             synchronized (SingletonLazyDoubleCheck.class){  //2
