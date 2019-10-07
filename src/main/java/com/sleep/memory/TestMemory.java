@@ -36,4 +36,38 @@ public class TestMemory {
         Tshirt tshirt = new Tshirt();
         System.out.println(RamUsageEstimator.sizeOf(tshirt));
     }
+
+    /**
+     * 12+4()+4+4
+     * 40+length*4(8)
+     */
+    @Test
+    public void TestListLength(){
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        System.out.println(RamUsageEstimator.sizeOf(list));
+        list.add(12321);
+        System.out.println(RamUsageEstimator.sizeOf(list));
+        list.add(1234);
+        System.out.println(RamUsageEstimator.sizeOf(list));
+
+    }
+
+    /**
+     * new int[0]=16
+     * new int[1]=24
+     * new int[2]=24
+     * new int[3]=32
+     */
+    @Test
+    public void TestListArray(){
+        int[] arrays = new int[3];
+        System.out.println(RamUsageEstimator.sizeOf(arrays));
+//        arrays[0]=123;
+        System.out.println(RamUsageEstimator.sizeOf(arrays));
+//        arrays[1]=123;
+        System.out.println(RamUsageEstimator.sizeOf(arrays));
+
+    }
+
+
 }
